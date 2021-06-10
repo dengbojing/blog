@@ -28,6 +28,9 @@ jobs:
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
       # - node/install-packages:
       #     pkg-manager: yarn 
+      - run: prepare
+        name: prepara
+        comand: npm install hexo-cli -g
       - run:
           name: build
           command: hexo d
