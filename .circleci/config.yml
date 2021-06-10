@@ -39,7 +39,7 @@ jobs:
       - run: 
           name: hexo theme install
           command: |
-            cd /home/circleci/project/blog/themes
+            cd /home/circleci/project/themes
             git pull origin master
       - run:
           name: build
