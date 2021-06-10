@@ -29,8 +29,11 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn 
       - run: 
-          name: prepara
+          name: prepare
           command: npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
+      - run: 
+          name: hexo install
+          command: npm install hexo -g
       - run:
           name: build
           command: hexo d
