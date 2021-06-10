@@ -36,12 +36,17 @@ jobs:
       - run: 
           name: hexo install
           command: sudo npm install hexo -g
+      - run: 
+          name: hexo theme install
+          command: |
+            cd /home/circleci/project/blog/themes
+            git pull origin master
       - run:
           name: build
-          command: hexo d
+          command: hexo g
       - run:
           name: deploy
-          command: hexo g 
+          command: hexo d 
 
 workflows:
   # Below is the definition of your workflow.
