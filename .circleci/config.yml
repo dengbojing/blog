@@ -31,8 +31,8 @@ jobs:
       - run: 
           name: git 
           command: |
-            git config user.email "dengbojing@outlook.com"
-            git config user.name "dengbojing"
+            git config --global user.email "dengbojing@outlook.com"
+            git config --global user.name "dengbojing"
       - run: 
           name: hexo install
           command: sudo npm install hexo -g
