@@ -30,7 +30,7 @@ jobs:
       #     pkg-manager: yarn 
       - run: 
           name: prepara
-          command: npm install hexo-cli -g
+          command: npm install hexo-cli 
       - run:
           name: build
           command: hexo d
