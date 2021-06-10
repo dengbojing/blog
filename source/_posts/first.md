@@ -8,11 +8,9 @@ categories: hexo
 
 记录一下使用hexo + github pages搭建博客的过程,以及过程中遇到的坑;同时也给阅读这篇文章,想要搭建博客的人一点帮助
 <!--more-->
-# 为什么搞独立blog
-`市面上blog service多如牛毛为啥非要搞自己的,因为独立的才是自己的`
 
-# 为什么使用gihub pages 
-`因为不用买服务器,免费而且稳定,也无需域名,只需要你有github账号就能用`
+# 使用gihub pages 
+免费而且稳定,也无需域名,只需要你有github账号就能用`
 
 > #  Talk is cheap, show me the code
 
