@@ -29,6 +29,11 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn 
       - run: 
+          name: git 
+          command: |
+            git config user.email "dengbojing@outlook.com"
+            git config user.name "dengbojing"
+      - run: 
           name: hexo install
           command: sudo npm install hexo -g
       - run:
