@@ -99,7 +99,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/dengbojing/dengbojing.github.io.git
+  repo: git@github.com:dengbojing/dengbojing.github.io.git
   branch: master
 
 
