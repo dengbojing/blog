@@ -21,7 +21,7 @@ public static final int ORANGE_NAVEL = 0;
 public static final int ORANGE_TEMPLE = 1;
 public static final int ORANGE_BLOOD = 2;
 ```
-int常量并不好维护, 而且即使你将常量类型弄混了, 也不会有什么问题, 因为都是int类型, 而且java没有命名空间这个概念, 只能使用前缀作为区分,这种情况下将apple常量和orange常量混合起来计算也不会出现任何编译或者运行时错误, 只会得到错误的结果. 
+int常量并不好维护, 而且即使你将常量类型弄混了, 也不会有什么问题, 因为都是int类型, 而且java没有命名空间这个概念, 只能使用前缀作为区分,这种情况下将apple常量和orange常量混合起来计算也不会出现任何编译或者运行时错误, 只会得到错误的结果,同样在进行调试的时候，显示的是一些数字，很难搞清楚数字背后的真正表达的含义。
 
 ```java
 public enum Apple { FUJI, PIPPIN, GRANNY_SMITH }
@@ -34,6 +34,7 @@ public enum Orange { NAVEL, TEMPLE, BLOOD }
 __如果一个枚举类型和一个类又紧密的联系,而且不会被外部使用, 那么应该将枚举作为该类的成员内部类使用, 而且尽量降低枚举的可见性, 如果只在包内使用那么可以设为private 或者 package-private__  
 
 
+__constant-specific:__ 在枚举中定义一个抽象方法，然后在具体的枚举实现常量里面实现该方法。这样做可以使每个枚举常量都可以拥有不同的行为。比如：加，减，乘，除，4个枚举常量对应4中不同的处理数据的行为。
 
 ## 如果重写了toString方法,那么可以写一个fromString方法反向获取枚举
 
