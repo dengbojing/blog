@@ -19,7 +19,7 @@ tags: java
 | Unbounded wildcard type | List<?>                            | 无界通配符类型 |
 | Raw type                | List                               | 原始类型       |
 | Bounded type parameter  | \<E extends Number>                | 有界类型参数   |
-| Recursive type bound    | \<T extends Comparable<T>>         | 递归类型限制   |
+| Recursive type bound    | \<T extends Comparable\<T>>         | 递归类型限制   |
 | Bounded wildcard type   | List<? extends Number>             | 有界通配符类型 |
 | Generic method static   | static \<E> List\<E> asList(E[] a) | 泛型方法       |
 | Type token              | String.class                       | 类型标记       |
@@ -269,7 +269,7 @@ public static <E> void add(Set<E> o, Set<E> o2){
 ...
 ```
 
-**在方法修饰副和返回值之间的`<E>`,被称为类型参数列表.**
+**在方法修饰符和返回值之间的`<E>`,被称为类型参数列表.**
 
 
 ## 泛型单例工厂
