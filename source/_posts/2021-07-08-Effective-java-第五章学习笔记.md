@@ -1,7 +1,7 @@
 ---
 title: Effective-java-第五章学习笔记
 date: 2021-07-08 14:52:12
-tags: java
+tags: java,读书笔记
 ---
 
 第五章: 泛型使用注意事项

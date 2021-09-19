@@ -80,7 +80,7 @@ public enum Operation {
 
 `Stream`概念包含一组数据(`Steam`)和作用于数据上的一个或者多个操作(`Stream pipline`).
 
-`Stream pipline`分为两种操作：中间操作(`intermediate operations`) 和 终止操作(`terminal operation`),中间操作可以有一个或者多噶，而终止操作只能有一个，但是只有在调用了有了终止操作，整个`Stream pipline`才会被触发，如果没有终止操作，那么处理流的代码永远不会被执行。
+`Stream pipline`分为两种操作：中间操作(`intermediate operations`) 和 终止操作(`terminal operation`),中间操作可以有一个或者多个，而终止操作只能有一个，但是只有在调用了有了终止操作，整个`Stream pipline`才会被触发，如果没有终止操作，那么处理流的代码永远不会被执行。
 
 流的处理默认是串行的，只有当调用流的`parallel`方法时候流的处理才会被并行处理，但是很少这么做，并行处理需要注意很多地方，且并行处理并不一定都会使处理速度加快。
 
