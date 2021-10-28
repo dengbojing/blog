@@ -127,13 +127,13 @@ public class Anagrams {
 
 
 
-# 使用`Streawms`中无副产物的函数
+# 使用`Streams`中无额为影响的函数
 
 纯函数(pure function): 输出只依赖输入，不依赖其他任何阶段的状态，也不会改变其他任何东西的状态。
 
 `forEach`函数应该只用作输出`Stream`最后计算出来的结果，不应该执行具体的计算，偶尔可以用作其他目的，比如添加`Stream`计算的结果到一个集合中。
 
-应该静态导入`Collectors`类，提高`Stream`最终的可读性，永远不要使用`Collectors.collect(counting())`等其他方法(`suming,averaging,summarizing,filtering,reducing,mapping,flatmapping`等)，这些方法是为了下游的`Stream`设计，应该使用`Stream`自带的方法
+应该静态导入`Collectors`类，提高`Stream`最终的可读性，永远不要直接使用`Collectors.collect(counting())`等其他方法(`suming,averaging,summarizing,filtering,reducing,mapping,flatmapping`等)，这些方法是为了下游的`Stream`设计，应该使用`Stream`自带的方法
 
 
 # 优先使用集合作为返回值
