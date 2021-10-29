@@ -133,7 +133,7 @@ public class Anagrams {
 
 `forEach`函数应该只用作输出`Stream`最后计算出来的结果，不应该执行具体的计算，偶尔可以用作其他目的，比如添加`Stream`计算的结果到一个集合中。
 
-应该静态导入`Collectors`类，提高`Stream`最终的可读性，永远不要直接使用`Collectors.collect(counting())`等其他方法(`suming,averaging,summarizing,filtering,reducing,mapping,flatmapping`等)，这些方法是为了下游的`Stream`设计，应该使用`Stream`自带的方法
+应该静态导入`Collectors`类，提高`Stream`最终的可读性，永远不要直接使用`Collectors.collect(counting())`等其他方法(`suming,averaging,summarizing,filtering,reducing,mapping,flatmapping`等)，这些方法是为了`downStream`(Collectors许多方法都有`downStream`参数)设计，应该使用`Stream`自带的方法
 
 
 # 优先使用集合作为返回值
