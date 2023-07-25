@@ -19,7 +19,7 @@ tags: [vim, neovim]
 # Configuration
 
 1. 使用`choco`安装`nvim`默认是在`c:\tools`下面, 具体的安装位置, 可以通过环境变量`ChocolateyToolsLocation`来指定.  
-2. `windows`操作系统下,`neovim`的配置文件`$env:localappdata\nvim`(默认为`c:\user\<username>\appdata\local\nvim, 该目录也是大多数应用程序的配置文件所在目录, 详见[what's appdata](https://www.xda-developers.com/appdata/#:~:text=It's%20a%20hidden%20folder%20that,User%2Dspecific%20installations))`.   
+2. `windows`操作系统下,`neovim`的配置文件`$env:localappdata\nvim`(默认为`c:\user\<username>\appdata\local\nvim, 该目录也是大多数应用程序的配置文件所在目录, 详见[what's appdata](https://www.xda-developers.com/appdata/#:~:text=It's%20a%20hidden%20folder%20that,User%2Dspecific%20installations)`.   
 3. 创建`init.lua文件`, `0.8.0`之前是`init.vim`, 之后版本也兼容`init.vim`但是大部分使用`init.lua`.  
 4. 创建lua\user文件夹, `md lua\user`.  
 5. 进入lua\user目录, 创建`options.lua`文件, 用于做`vim`的通用配置, 创建`globals.lua`用于全局配置, 创建`plugins.lua` 用于加载插件.  
