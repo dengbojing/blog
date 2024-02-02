@@ -1,11 +1,13 @@
 ---
-titile: neovim学习笔记
+title: neovim学习笔记
 date: 2023-04-16
 tags: [vim, neovim]
 ---
 
-<!--more-->
-# 0x00 
+nvim 学习以及配置
+
+<!--more-->  
+# First
 
 从18年开始一直使用 `idea-vim` 插件作为编辑工具, 日常使用虽然比较频繁, 但是很少做深入了解, 只是局限于一些简单的操作, 虽然速度提升了一些, 但是远远不够, `idea` 号称内存黑洞, 所以一直在考虑是不是有一种很多好的工具能够替代它,
 最开始想到的是`eclipse`系列(`sts, myeclipse`等), 虽然现在`eclipse`也很强大,但是还是老问题, 如果`workspaces`打开项目多了,确实还是会卡, `idea` 没有 `workspaces` 这个概念,一个项目开一个窗口,造成内存吃紧;后面队任何 `IDE` 都失去兴趣了,
@@ -14,7 +16,7 @@ tags: [vim, neovim]
 # Install  
 
 1. [官方安装包下载](https://github.com/neovim/neovim/releases) 
-2. `windows`下使用[chocolatey](https://chocolatey.org/install)安装, 命令为`choco install neovim --pre`, 此处`--per` 为安装`beta`版本(目前为`0.10.0), 默认安装版本为 `0.8.0`, `neovim 0.9.0`版本之后使用`lua`语言管理插件.  
+2. `windows`下使用[chocolatey](https://chocolatey.org/install)安装, 命令为`choco install neovim --pre`, 此处`--per` 为安装`beta`版本(目前为`0.10.0`), 默认安装版本为 `0.8.0`, `neovim 0.9.0` 版本之后使用 `lua` 语言管理插件.  
 
 # Configuration
 
